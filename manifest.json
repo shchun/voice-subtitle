@@ -1,7 +1,7 @@
 {
   "id": "voice-subtitle-jamak",
-  "name": "실시간 자막",
-  "short_name": "자막",
+  "name": "jamak",
+  "short_name": "jamak",
   "description": "말하면 큰 글씨로 보여주는 실시간 자막",
   "lang": "ko",
   "start_url": "./index.html?pwa=1",

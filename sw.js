@@ -1,6 +1,6 @@
 // 서비스워커 — 네트워크 우선(온라인이면 항상 최신 코드), 오프라인이면 캐시로 폴백.
 // 개발 중 코드 갱신이 폰에 즉시 반영되도록 cache-first가 아닌 network-first로 둔다.
-var CACHE = "jamak-v9";
+var CACHE = "jamak-v10";
 var ASSETS = ["./", "./index.html", "./manifest.json", "./icon.svg", "./icon-192.png", "./icon-512.png"];
 
 self.addEventListener("install", function (e) {
