@@ -5,6 +5,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
 <meta name="theme-color" content="#000000" />
 <title>실시간 자막</title>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-FJL6BD9YNR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-FJL6BD9YNR');
+</script>
+
 <link rel="manifest" href="manifest.json" />
 <link rel="icon" href="icon.svg" type="image/svg+xml" />
 <link rel="apple-touch-icon" href="icon-192.png" />
@@ -171,7 +182,7 @@
   "use strict";
 
   // 화면 우상단 버전 표시 — 폰이 최신 코드를 받았는지 확인용.
-  var APP_VERSION = "v8";
+  var APP_VERSION = "v9";
   var verEl = document.getElementById("ver");
   if (verEl) verEl.textContent = APP_VERSION;
 
