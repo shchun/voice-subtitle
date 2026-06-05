@@ -1,0 +1,10 @@
+# VM/Caddy 배포 설정(비공개 인프라) — GitHub Pages 공개 repo에는 올리지 않음
+deploy/
+
+# 에디터/도구 로컬 설정
+.claude/
+
+# 임시 파일
+_c.js
+_check.js
+*.tmp
