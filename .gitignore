@@ -8,3 +8,6 @@ deploy/
 _c.js
 _check.js
 *.tmp
+
+# 개발 메모(로컬 전용)
+TODO.md
