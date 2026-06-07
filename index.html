@@ -55,10 +55,17 @@
     padding: 24px 24px 16px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;   /* 새 글이 아래에서 올라옴 (구글 자막 방식) */
     gap: 0.35em;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+  }
+
+  /* 새 글이 아래에서 올라옴(구글 자막 방식). justify-content:flex-end 대신
+     맨 위에 자동 여백 스페이서를 둔다 — 그래야 내용이 길어져도 위로 스크롤해
+     옛날 자막을 볼 수 있다(flex-end는 넘친 윗부분이 잘려 스크롤 불가). */
+  #captions::before {
+    content: "";
+    margin-top: auto;
   }
 
   /* #session 은 매 이벤트마다 다시 그려지므로 줄 단위 애니메이션은 두지 않는다(깜빡임 방지). */
@@ -182,7 +189,7 @@
   "use strict";
 
   // 화면 우상단 버전 표시 — 폰이 최신 코드를 받았는지 확인용.
-  var APP_VERSION = "v10";
+  var APP_VERSION = "v11";
   var verEl = document.getElementById("ver");
   if (verEl) verEl.textContent = APP_VERSION;
 
